@@ -45,6 +45,8 @@ public class MergeSort {
 //            R[j] = array[middle + 1 + j];
 //        }//End of For
 
+
+        //TODO :: 어쩌고 해야함 지금 당장 해결
         //임시 배열을 합칩니다.
         // i : L 배열의 현재 인덱스를 가르킴
         // j : R 배열의 현재 인덱스를 가르킴
