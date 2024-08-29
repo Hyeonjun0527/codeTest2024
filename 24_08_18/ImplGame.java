@@ -62,6 +62,7 @@ public class ImplGame {
         int characterDirectionValue = line2[2];//0 1 2 3 북 동 남 서중 하나야.
         int[][] map = new int[maxX][maxY];//0,0부터 시작이야
 
+        //맵만드는중
         for (int i = 0; i < maxY; i++) {
             int[] line3 = Arrays.stream(bufferedReader.readLine().split(" "))
                     .mapToInt(Integer::parseInt)
@@ -139,8 +140,6 @@ public class ImplGame {
 
                 System.out.println("이제 방향은"+dx[characterDirectionIndex] + "," + dy[characterDirectionIndex] + "방향이야");
             }//End of For
-
-
         }
 
         System.out.println(count);
