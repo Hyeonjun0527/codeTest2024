@@ -54,13 +54,10 @@ public class Tteokbokki {
     }//End Of Main
 
     public static int search(int[] array, int startP, int endP) {
-
         endP = endP - 1;//exclusive
         int insertP;
-
         while(startP <= endP) {
             insertP = (startP+endP)/2;
-
             int finalInsertP = insertP;
             int sum = Arrays.stream(tteoks).map(element->{
                 int temp = element - finalInsertP;
@@ -71,8 +68,6 @@ public class Tteokbokki {
                 }
             }).sum();
             System.out.printf("실행 전 결과 startP::%d, endP::%d h::%d sum::%d\n",startP,endP,insertP,sum);
-
-
             if(m == sum) {
                 return insertP;
             } else if ( m > sum) {
@@ -80,14 +75,10 @@ public class Tteokbokki {
             } else {
                 startP = insertP + 1;
             }
-
             System.out.printf("실행 후 결과 startP::%d endP::%d h::%d sum::%d\n",startP,endP,insertP,sum);
         }
-
         return - (startP - 1) -1;
-
     }
-
 }
 
 /*
@@ -109,7 +100,8 @@ H를 지정하면 한번에 절단함
 떡개수 10^6야. NlogN * (N logN + N)
 4 6
 19 15 10 17
-
+4 2000000000
+1234123412 1234541521 123871521 344441521
 4 91
 200 200 200 200
 
